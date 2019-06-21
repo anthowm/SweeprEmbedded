@@ -1,0 +1,19 @@
+framework module Sweepr {
+    umbrella header "SweeprUmbrella.h"
+    
+    export *
+    module * { export * }
+
+
+    explicit module Private {
+        header "DNSServiceMetaQuery.h"
+
+        // ...
+    }
+    
+}
+
+module Sweepr.Swift {
+    header "Sweepr-Swift.h"
+    requires objc
+}

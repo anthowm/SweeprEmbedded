@@ -1,0 +1,317 @@
+{"name":"Layer 3 TV Set-Top Box Setup",
+    "context":{
+        "serviceLatencyURL":"https://help.layer3tv.com",
+        "SERVICE_NAME":"Layer 3",
+        "serviceId":"200",
+        "HOUSEHOLD_USER":"Jim",
+        "USER_PROFILE_LEVEL":"AVOIDANT"
+    },
+    "steps":[
+             {
+             "order":"1",
+             "type":"prompt",
+             "delay":5,
+             "render":[
+                       {
+                       "text":"Hello {{{HOUSEHOLD_USER}}}, Let's get you on T-Mobile(Layer-3) TV box"
+                       }
+                       ]
+             },
+             {
+             "order":"2",
+             "type":"card",
+             "auditMessage":"TV Set-Up box onboarding steps",
+             "cardContainers":[
+                               {
+                               "title":"TV Box setup",
+                               "subtitle":"Entertainment ahead",
+                               "heading":"Let's Go!",
+                               "layout":"compact",
+                               "media":{
+                               "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile",
+                               "type":"image"
+                               }
+                               ,
+                               "cards":[
+                                        {
+                                        "title":"Setup Checklist (Pre-requisites)",
+                                        "subtitle":"Before we get started, does your box have all of these?",
+                                        "media":{
+                                        "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile",
+                                        "type":"image"
+                                        }
+                                        },
+                                        {
+                                        "title":"Find a spot for your box",
+                                        "subtitle":"Find a location close to either  your internet router or an ethernet port on you wall",
+                                        "media":{
+                                        "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step1&amp;resolutionName=layer3onboarding",
+                                        "type":"image"
+                                        }
+                                        }
+                                        
+                                        ]
+                               }
+                               ]
+             },
+             {
+             "order": "3",
+             "type": "group",
+             "auditMessage": "TV Set-Up box onboarding steps",
+             "when": "{{{USER_PROFILE_LEVEL}}} == CONFIDENT",
+             "steps": [
+                       {
+                       "order": "3.a.1",
+                       "type": "card",
+                       "cardContainers": [
+                                          {
+                                          "subtitle": "Now that you have everything ready, let's set it up quick and easy. ",
+                                          "layout": "compact",
+                                          "cards": [
+                                                    {
+                                                    "title": "Firstly, the HDMI cable",
+                                                    "subtitle": "Connect the HDMI cable to your TV and the TV box",
+                                                    "media":{
+                                                    "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=opt_step1&amp;resolutionName=layer3onboarding",
+                                                    "type":"image"
+                                                    }
+                                                    },
+                                                    {
+                                                    "title": "Then, Connect the ethernet cable to your home router/ethernet port and to the TV box ",
+                                                    "media":{
+                                                    "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=opt_step2&amp;resolutionName=layer3onboarding",
+                                                    "type":"image"
+                                                    }
+                                                    },
+                                                    {
+                                                    "title": "finally, the power cable",
+                                                    "subtitle": "Connect the power cable to the TV box and your preferred electric socket",
+                                                    "media":{
+                                                    "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=opt_step3&amp;resolutionName=layer3onboarding",
+                                                    "type":"image"
+                                                    }
+                                                    },
+                                                    {
+                                                    "title": "Switch to HDMI",
+                                                    "subtitle": "Using your TV remote, switch to the plugged in HDMI",
+                                                    "media":{
+                                                    "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step1&amp;resolutionName=layer3onboarding",
+                                                    "type":"image"
+                                                    }
+                                                    },
+                                                    {
+                                                    "title": "Time to setup your TV account",
+                                                    "subtitle": "Dial  844-LAYER3TV and seek conceirge assistance to set up an account",
+                                                    "media": {
+                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=accountsetup&amp;resolutionName=layer3onboarding",
+                                                    "type": "image"
+                                                    }
+                                                    },
+                                                    {
+                                                    "title": "Battery your layer3TV remotes",
+                                                    "subtitle": "Power up the layer3TV remotes with the batteries given",
+                                                    "media": {
+                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=done&amp;resolutionName=layer3onboarding",
+                                                    "type": "image"
+                                                    }
+                                                    },
+                                                    {
+                                                    "title": "And, you are set ! ",
+                                                    "media": {
+                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=done&amp;resolutionName=layer3onboarding",
+                                                    "type": "image"
+                                                    }
+                                                    }
+                                                    ]
+                                          }
+                                          ]
+                       }
+                       ],
+             "altSteps": [
+                          {
+                          "order": "3.b.1",
+                          "type": "group",
+                          "auditMessage": "TV Set-Up box onboarding steps",
+                          "when": "{{{USER_PROFILE_LEVEL}}} == OPTIMISTIC",
+                          "steps": [
+                                    {
+                                    "order": "3.b.a.1",
+                                    "type": "card",
+                                    "cardContainers": [
+                                                       {
+                                                       "subtitle": "Now that you have everything ready, let's set it up quick and easy. ",
+                                                       "layout": "compact",
+                                                       "cards": [
+                                                                 {
+                                                                 "title": "Firstly, the HDMI cable",
+                                                                 "subtitle": "Connect the HDMI cable to your TV and the TV box",
+                                                                 "media":{
+                                                                 "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=opt_step1&amp;resolutionName=layer3onboarding",
+                                                                 "type":"image"
+                                                                 }
+                                                                 },
+                                                                 {
+                                                                 "title": "Then, Connect the ethernet cable to your home router/ethernet port and to the TV box ",
+                                                                 "media":{
+                                                                 "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=opt_step2&amp;resolutionName=layer3onboarding",
+                                                                 "type":"image"
+                                                                 }
+                                                                 },
+                                                                 {
+                                                                 "title": "finally, the power cable",
+                                                                 "subtitle": "Connect the power cable to the TV box and your preferred electric socket",
+                                                                 "media":{
+                                                                 "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=opt_step3&amp;resolutionName=layer3onboarding",
+                                                                 "type":"image"
+                                                                 }
+                                                                 },
+                                                                 {
+                                                                 "title": "Switch to HDMI",
+                                                                 "subtitle": "Using your TV remote, switch to the plugged in HDMI",
+                                                                 "media":{
+                                                                 "url":"https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step5&amp;resolutionName=layer3onboarding",
+                                                                 "type":"image"
+                                                                 }
+                                                                 },
+                                                                 {
+                                                                 "title": "Time to setup your account",
+                                                                 "subtitle": "Dial  844-LAYER3TV and seek conceirge assistance to set up an account",
+                                                                 "media": {
+                                                                 "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=accountsetup&amp;resolutionName=layer3onboarding",
+                                                                 "type": "image"
+                                                                 }
+                                                                 },
+                                                                 {
+                                                                 "title": "Battery your layer3 remotes",
+                                                                 "subtitle": "Power up the layer3 remotes with the batteries given"
+                                                                 },
+                                                                 {
+                                                                 "title": "And, you are set ! ",
+                                                                 "media": {
+                                                                 "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=done&amp;resolutionName=layer3onboarding",
+                                                                 "type": "image"
+                                                                 }
+                                                                 }
+                                                                 ]
+                                                       }
+                                                       ]
+                                    }
+                                    ],
+                          "altSteps": [
+                                       {
+                                       "order": "3.b.b.1",
+                                       "type": "card",
+                                       "cardContainers": [
+                                                          {
+                                                          "layout": "compact",
+                                                          "subtitle": "Now that you have everything ready, let's set it up quick and easy. ",
+                                                          "cards": [
+                                                                    {
+                                                                    "subtitle": "Starting with the HDMI cable",
+                                                                    "text": "Plug one end of the cable to your Layer 3 TV box",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step2.1&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "subtitle": "Plug the other end to your TV and note the HDMI input number/label of the port you plugged in",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step2.2&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "You are doing great !",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step1done&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "Connecting your network cable ",
+                                                                    "subtitle": "Plug one end of the ethernet cable to the box",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step3.1&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "subtitle": "Plug the other end to either your router or any ethernet port on your wall ",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step3.2&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "You are almost there!",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step2done&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "Lastly, the power cable ",
+                                                                    "subtitle": "Plug the power cable to any nearby electric socket ",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step4.1&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "subtitle": "Plug  the other end to your box",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step4.2&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "Brilliant, the hard part is over! ",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step3done&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "Now, change TV to HDMI",
+                                                                    "subtitle": "Use your TV remote Switch your TV to the HDMI port as noted in Step 2",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step5&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "You need your own Layer3TV account",
+                                                                    "subtitle": "Dial  844-LAYER3TV and seek conceirge assistance to set up an account",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=accountsetup&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "Finally....",
+                                                                    "subtitle": "Insert the 2 AA batteries into the TV Box remote to operate your Setup Box. ",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=step6&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    },
+                                                                    {
+                                                                    "title": "And, you are set ! ",
+                                                                    "media": {
+                                                                    "url": "https://hippo.sweepr.com/site/restservices/image?domain=device&amp;manufacturer=t-mobile&amp;family=layer3tv&amp;imageFileName=done&amp;resolutionName=layer3onboarding",
+                                                                    "type": "image"
+                                                                    }
+                                                                    }
+                                                                    ]
+                                                          }
+                                                          ]
+                                       }
+                                       ]
+                          }
+                          ]
+             }
+             
+             ]
+    
+}
